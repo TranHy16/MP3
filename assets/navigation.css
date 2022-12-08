@@ -1,0 +1,135 @@
+
+.zing-navigation {
+    width: 240px;
+    height: 515px;
+    background-color: #411465;
+    position: fixed;
+}
+.zing-navigation-logo-img:hover {
+    opacity: 0.8;
+}
+.zing-navigation-logo-img {
+    width: 240px;
+    height: 70px;
+}
+.frame{
+    height: 40px;
+    line-height: 40px;
+    opacity: 0.7;
+}
+.frame:hover{
+    background-color: #552c75;
+    border-left: 3px solid #ed2b91;
+    cursor: pointer;
+    opacity: 2;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 28px;
+    color: #fff ;
+}
+.radio-live {
+    width: 35px;
+    height: 20px;
+    background-color: #ff0d0d;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: none;
+    align-items: center;
+    margin-left: 5px;
+
+}
+.navigation-line {
+    border-top: 1px solid #9177a6;
+    margin: 15px 28px;
+}
+.text {
+    display: inline-block;
+    margin-left: 6px;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: Sans-serif;
+    word-spacing: -2px;
+}
+.zing-navigation-scroll {
+
+    height: 160px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.zing-navigation-scroll::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+
+}
+.zing-navigation-scroll::-webkit-scrollbar-thumb {
+    background-color:#9177a6;
+    border-radius: 5px;
+}
+.zing-navigation-VIP {
+    width: 185px;
+    height: 108px;
+    background-image: linear-gradient(to top left,#5b48de,#c26bd7);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.zing-navigation-VIP-button {
+    cursor: pointer;
+}
+.zing-navigation-VIP-button {
+    background-color: #ffdb00;
+    border-style: none;
+    width: 160px;
+    height: 30px;
+    border-radius: 20px;
+    display: absolute;
+    margin: 15px;
+}
+.zing-navigation-VIP-text {
+    color: #fff;
+    text-align:center;
+    padding-top: 18px;
+}
+.zing-navigation-title-libary {
+    color: #fff;
+    margin-left: 28px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: Sans-serif;
+    word-spacing: -2px;;
+    margin-bottom: 10px;
+}
+.zing-navigation-add {
+    cursor: pointer;
+}
+.text-scroll {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #ccc;
+    font-family: Sans-serif;
+    word-spacing: -2px;
+}
+.ti-music-alt {
+    color: rgb(6, 151, 224);
+}
+.ti-list{
+    color: rgb(76, 184, 76);
+}
+.ti-time {
+    color:rgb(234, 247, 93)
+}
+.zing-navigation-line-full {
+    border-top: 1px solid #9177a6;
+}
+.zing-navigation-add {
+    height: 50px;
+    line-height: 50px;
+}

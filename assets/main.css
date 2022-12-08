@@ -1,0 +1,37 @@
+@import url(./navigation.css);
+@import url(./header.css);
+@import url(./discover.css);
+@import url(./play-music.css);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Sans-serif;
+}
+.block{
+    position: relative;
+}
+.zing-main{
+    background-color:#37075d;
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    display: inline-block ;
+    position: relative;
+    height: 515px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+.zing-main::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+.zing-main::-webkit-scrollbar-thumb {
+    background-color:#9177a6;
+    border-radius: 5px;
+}
+.zing-main-space {
+    background-color: #37075d;
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+}

@@ -1,0 +1,69 @@
+
+.zing-main-header {
+    height: 70px;
+    background-color: #37075d;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.1);
+   
+}
+.zing-main-header-frame {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.zing-main-header-prev-next{
+    position: absolute;
+    line-height: 70px;
+}
+.icon-header {
+    display: inline-block;
+    color: #785091;
+}
+.ti-arrow-right {
+    margin-left: 26px;
+}
+
+.zing-main-header-search {
+    position: absolute;
+    display: inline-block;
+    border-style: none;
+    margin-left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+
+   
+}
+.zing-main-header-search-frame {
+    border-radius: 50px;
+    width: 412px;
+    height: 42px;
+    color: #ccc;
+    line-height: 70px;
+    background-color:  #4f2070;;
+}
+.zing-main-header-list-circle{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    margin-left: 640px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.zing-main-header-topic, .zing-main-header-update-VIP, .zing-main-header-install, .zing-main-header-Up, .zing-main-header-avatar {
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    background-color:#4c296b;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+   
+}
+.icon-circle {
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}

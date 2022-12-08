@@ -1,0 +1,659 @@
+/* SLIDE SHOW */
+.slideshow-container {
+    max-width: 290px;
+    position: relative;
+    margin: 100px  auto 0;
+}
+.mySlides {
+    display: none;
+}
+.slide-img {
+    height: 160px;
+    width: 290px;
+    border-radius: 10px;
+}
+.prev, .next {
+    cursor : pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -110px;
+    padding: 10px 16px;
+    font-size: 1.2rem;
+    transition: 0.6s ease;
+    border-radius: 100%;
+    user-select : none;
+    background-color: #fff;
+}
+.next {
+    left: 620px;
+    border-radius: 100%;
+}
+
+.prev {
+    left: 250px;
+    border-radius: 100%;
+}
+.prev:hover, .next:hover {
+    background-color:#ab78d4;
+}
+.text-slide {
+    color: #ffff;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+ /* thiết lập style  nút tròn điều khiển*/
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+ .active, .dot:hover {
+    background-color:#8e03b0;
+  }
+ /* tạo hiệu ứng chuyển động fade */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+ @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/* Quảng cáo */
+.zing-main-body-advertisement {
+    margin-top: 50px;
+}
+.zing-main-body-advertisement-img {
+    width: 100%;
+    height: 90px;
+    padding-right: 5px;
+}
+
+.zing-main-body-title {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+/* RECENTLY */
+.item-icon {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+.icon-body {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    margin-top: -70px;
+    display: none;
+}
+.zing-main-body-recently-list {
+    display: flex;
+    list-style: none;
+}
+.zing-main-body-recently-item:first-child {
+   margin-left: 0px;
+}
+.zing-main-body-recently-item:last-child {
+    margin-right: 0px;
+}
+.zing-main-body-recently-item {
+    margin: 0 12px;
+}
+.hover-img:hover .icon-body{
+    display: block;
+}
+.zing-main-body-recently-item-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 0.5;
+}
+.recently-img {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 130px;
+    height: 130px;
+}
+.zing-main-body-recently-item-img {
+    border-radius: 10%;
+    transition: all .3s ease;
+    object-position: -20px -20px;
+}
+.zing-main-body-recently-item-cap:hover {
+    color:#f663ec;
+    cursor: pointer;
+}
+.zing-main-body-recently-item-cap {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+/* MAY BE YOU WANT TO HEAR - MIDWEEKENENERGY - NEWMUSICEVERYDAY - TOP 100 - XONE'S CORNER - NONAME*/
+.icon-body-own {
+    color: #fff;
+    margin-right: 35px;
+    font-size: 1.4rem;
+    margin-top: -100px;
+}
+.item-icon-own {
+    display: none;
+}
+.hover-img:hover .item-icon-own{
+    display: block;
+}
+.content-main-body {
+    margin-top: 50px;
+}
+.content-main-body-list {
+    list-style: none;
+    display: flex;
+}
+.content-main-body-item:first-child{
+    margin-left: 0;
+}
+.content-main-body-item {
+   margin: 0 10px;
+}
+.block-img{
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 210px;
+    height: 210px;
+}
+.block-item-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;;
+}
+.block-item-img {
+    transition: all .3s ease;
+    border-radius: 10px;
+    
+    object-position: -80px -80px;
+}
+.item-cap:hover{
+    color: #f663ec;
+    cursor: pointer;
+}
+.item-cap {
+    color: #fff;
+    margin-top: 8px;
+    font-size: 1rem;
+}
+.item-sub:hover{
+    color:  #f663ec;
+    text-decoration: underline #f663ec 1px;
+}
+.item-sub {
+    color:#c5add8;
+    margin-top: 5px;
+    font-size: 0,8rem;
+    font-weight: 500;;
+}
+/* NEWRELEASE */
+.zing-main-body-NewRelease-title {
+    color: #fff;
+    margin-top: 54px;
+}
+.active-newrelease{
+    margin-left: 0;
+    background-color: #ef427b;
+}
+.zing-main-body-NewRelease-bt:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.zing-main-body-NewRelease-bt {
+    width: 96px;
+    height: 28px;
+    border-style: none;
+    color: #fff;
+    background-color: transparent;
+    border:1px solid #c5add8;
+    display: inline-block;
+    border-radius: 30px;
+    margin: 26px 6px 26px 6px ;
+}
+
+.active-newrelease{
+    margin-left: 0;
+    border-color: #ef427b;
+    background-color: #ef427b;
+}
+.zing-main-body-NewRelease-frame {
+    display: flex;
+}
+.zing-main-body-NewRelease-column-item:first-child {
+    margin-left: 0;
+}
+.zing-main-body-NewRelease-frame {
+    list-style: none;
+}
+.zing-main-body-NewRelease-column {
+    width: 380px;
+}
+.zing-main-body-NewRelease-column-item:hover {
+    background-color: #4b206e;
+}
+.zing-main-body-NewRelease-column-item {
+    height: 80px;
+    width: 290px;
+    border-radius: 5px;
+    margin-right: 30px;
+
+}
+.NewRelease-column-item-img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.NewRelease-column-item-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.NewRelease-column-item-intro {
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    margin-left: 8px;
+    word-spacing: -2px;
+    margin-top: 10px;
+}
+.NewRelease-time, .NewRelease-name-auhtor {
+    color:#c5add8; 
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+/* ZING-CHAR */
+.zing-main-body-zingchart {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to top left,#2b1849,#8e03b0);
+    border-radius: 10px;
+
+}
+.zingchart-title:hover {
+    color: #f684ee
+}
+.zingchart-title {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.zingchart-list {
+    width: 40%;
+
+}
+.zingchart-item:hover {
+    background-color: #895f9f;
+    cursor: pointer;
+}
+.zingchart-item {
+    width: 354px;
+    height: 80px;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-color:#732a9a;
+}
+.zingchart-item-number-1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px #527fd2;
+    margin-left: 8px;
+    
+}
+.zingchart-item-number-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px #50c9b6;
+    margin-left: 8px;
+}
+.zingchart-item-number-3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px #d84c51;
+    margin-left: 8px;
+}
+.zingchart-item-img {
+    opacity: 0.7;
+}
+.zingchart-item-img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    margin-left: 40px;
+    
+}
+.zingchart-item-intro {
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    margin-left: 115px;
+    color: #ffff;
+}
+.zingchart-button:hover {
+    cursor: pointer;
+    background-color:#876a97 ;
+}
+.zingchart-BTN {
+    display: flex;
+    justify-content: center;
+}
+.zingchart-button {
+   border-radius: 20px;
+   color: #fff;
+   background-color: #31164f;
+   border: 1px solid #fff;
+   width: 120px;
+   height: 35px;
+   margin-top: -8px;
+  
+}
+.zingchart-item-intro-song {
+   font-size: 1rem;
+   font-weight: 600;
+}
+.zingchart-item-intro-author {
+   font-size: 0.8rem;
+   margin-top: 5px;
+   color: #a685b2;
+   
+}
+/* ZING-SUB-CHAR */
+.sub-char-img {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 290px;
+    height: 86px;
+    margin-right: 12px;
+}
+.zing-main-body-sub-char {
+    display: flex;
+    margin-top: 25px;
+}
+.zing-main-body-sub-char-img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.zing-main-body-sub-char-img {
+    transition: all .3s ease;
+}
+/* RADIO */
+.radio-list{
+    display: flex;
+    list-style: none;
+}
+.radio-item {
+    margin-right: 20px;
+
+}
+.radio-live-frame {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+.main-radio-live {
+    border-style: none;
+    background-color: #ff0d0d;
+    width: 30px;
+    height: 15px;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 15px;
+    z-index: 1;
+    border-radius: 5px;
+}
+.radio-main-block {
+    
+    border: 3px solid #ff0d0d;
+    width: 130px;
+    height: 130px;
+    display: block;
+    overflow: hidden;
+    border-radius: 100%;
+    position: relative;
+}
+.radio-main-img:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+.radio-main-img { 
+    width: 130px;
+    height: 130px;
+    border-radius:100%;
+    transition: all 0.3s ease;
+}
+.radio-sub-block {
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 100px;
+}
+.radio-sub-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+}
+.radio-cap {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.radio-sub {
+    color: #c5add8;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+/* NEW MUSIC */
+.new-music-list {
+    list-style: none;
+    display: flex;
+}
+.new-music-item:hover {
+    cursor: pointer;
+}
+.new-music-item {
+    width: 310px;
+    height: 152px;
+    background-color: #4b206e;
+    position: relative;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.new-music-img {
+    display: block;
+    overflow:hidden;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    margin-left: 15px;
+
+}
+.new-music-item-img:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+.new-music-item-img {
+    transition: all .3s ease;
+}
+.new-music-intro {
+    display: inline-block;
+    margin-left: 145px;
+    margin-right: 20px;
+}
+.new-music-item-song {
+    color: #fff;
+    font-weight: 750;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.new-music-item-auhtor {
+    color:#ab78d4;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+.new-music-number-and-date {
+    display: flex;
+    
+}
+.new-music-date {
+    margin-left: 20px;
+    color:#ab78d4;
+    line-height:60px;
+    font-size: 0.9rem;
+}
+.new-music-number {
+    color: transparent;
+    -webkit-text-stroke: 2px #ab78d4;
+    font-size: 2.5rem;
+    font-weight: 700;
+    word-spacing: 2px;
+}
+/* SỰ KIỆN */
+.event-list {
+    list-style: none;
+    margin-bottom: 50px;
+    display: flex;
+}
+.event-img-frame {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.event-item:hover {
+cursor: pointer;
+}
+.event-item {
+    margin-right: 20px;
+}
+.event-img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.event-img {
+    width: 290px;
+    height: 174px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+   
+}
+.event-up-song {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -80px;
+    background-color: #fff;
+    color:#ff0d0d;
+    width: 100px;
+    height: 20px;
+    font-size: 0.6rem;
+    line-height: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.event-song {
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 10px;
+    color: #fff;
+}
+.event-time {
+    
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 10px;
+    color: #fff;
+    
+}
+.event-care {
+    display: flex;
+}
+.event-care-quantity {
+    color: #fff;
+    margin-top: 10px;
+}
+.event-care-btn:hover {
+    opacity: 0.7;
+}
+.event-care-btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#ed2b91;
+    border-style: none;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.doitac {
+    color:#c5add8;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+.doitac-frame{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.doitac-img {
+    width: 90px;
+    height: 50px;
+}
+.doitac-img-block {
+    margin-right:20px;
+    border-radius: 10px;
+}

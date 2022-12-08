@@ -1,0 +1,910 @@
+<!-- Ngày thực hiện: 1/12/2022 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons/themify-icons.css">
+    <title>Zing MP3</title>
+</head>
+<body>
+   <div class="block">
+     <!-- Thanh điều hướng -->
+     <div class="zing-navigation">
+        <div class="zing-logo">
+            <img src="./assets/image/zing-mp3.jpg" alt="" class="zing-navigation-logo-img">
+        </div>
+        <div class="zing-navigation-fix">
+            <div class="zing-navigation-personal frame">
+                <i class="ti-user icon"></i>
+                <h4 class="text">Cá nhân</h4>
+            </div>
+            <div class="zing-navigation-discover frame" onclick="discover()">
+                <i class="ti-location-pin icon"></i>
+                <h4 class="text">Khám Phá</h4>     
+            </div>
+            <div class="zing-navigation-char frame">
+                <i class="ti-bar-chart-alt icon"></i>
+                <h4 class="text">#zingchar</h4> 
+            </div>
+            <div class="zing-navigation-radio frame">
+                <i class="ti-signal icon"></i>
+                <h4 class="text">Radio</h4> 
+                <button class="radio-live">Live</button>
+                </button>
+            </div>
+            
+            <div class="zing-navigation-follow frame">
+                <i class="ti-link icon"></i>
+                <h4 class="text">Theo Dõi</h4> 
+            </div>
+
+        </div>
+        <div class="navigation-line">
+
+        </div>
+        <div class="zing-navigation-scroll">
+            <div class="zing-navigation-new-music frame">
+                <i class="ti-music icon"></i>
+                <h4 class="text">Nhạc Mới</h4> 
+            </div>
+            <div class="zing-navigation-kind-of-music frame">
+                <i class="ti-package icon"></i>
+                <h4 class="text">Thể loại</h4> 
+            </div>
+            <div class="zing-navigation-top-100 frame">
+                <i class="ti-star icon"></i>
+                <h4 class="text">Top 100</h4> 
+            </div>
+            <div class="zing-navigation-MV frame">
+                <i class="ti-video-clapper icon"></i>
+                <h4 class="text">MV</h4> 
+            </div>
+            <div class="zing-navigation-VIP">
+                <p class="zing-navigation-VIP-text">
+                    Nghe nhạc không quảng cáo cùng kho nhạc vip
+                </p>
+                <button class="zing-navigation-VIP-button">
+                    Nâng cấp VIP
+                </button>
+            </div>
+            <div class="zing-navigation-title-libary">
+                <h3 class="libarary-text">Thư Viện</h3>
+            </div>
+            <div class="zing-navigation-song frame">
+                <i class="ti-music-alt icon"></i>
+                <h4 class="text-scroll">Bài Hát</h4> 
+            </div>
+            <div class="zing-navigation-playlist frame">
+                <i class="ti-list icon"></i>
+                <h4 class="text-scroll">PlayList</h4> 
+            </div>
+            <div class="zing-navigation-recently frame">
+                <i class="ti-time icon"></i>
+                <h4 class="text-scroll">Gần đây</h4> 
+            </div>
+        </div>
+        <div class="zing-navigation-line-full"></div>
+        <div class="zing-navigation-add">
+            <i class="ti-plus icon"></i>
+            <h4 class="text">Tạo playlist mới</h4> 
+        </div>
+     </div>
+    <!-- Zing MAIN -->
+    <div class="zing-main">
+        
+        <!-- ZING MAIN HEADER -->
+        <div class="zing-main-header">
+            <div class="zing-main-header-frame">
+                <div class="zing-main-header-prev-next">
+                    <i class="ti-arrow-left icon-header"></i>
+                    <i class="ti-arrow-right icon-header"></i>
+                </div>
+                <div class="zing-main-header-search">
+                    <input class="zing-main-header-search-frame" 
+                    type="text" 
+                    value = "         Tìm kiếm bài hát, nghệ sĩ, lời bài hát..." 
+                    style=" border: none;">
+                </div>
+                <ul class="zing-main-header-list-circle">
+                    <li class="zing-main-header-topic">
+                        <i class="icon-circle ti-brush-alt"></i>
+                    </li>
+                    <li class="zing-main-header-update-VIP">
+                        <i class="icon-circle ti-crown"></i>
+                    </li>
+                    <li class="zing-main-header-install">
+                        <i class="icon-circle ti-settings"></i>
+                    </li>
+                    <li class="zing-main-header-Up">
+                        <i class="icon-circle ti-export"></i>
+                    </li>
+                    <li class="zing-main-header-avatar">
+                        <i class="icon-circle ti-face-smile"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="zing-main-space">
+        <!-- ZING MAIN BODY -->
+        <div class="zing-main-body">
+            <!-- SLIDESHOW -->
+            <div class="slideshow-container">
+                <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+                 <div class="mySlides fade">
+                   <div class="numbertext">1 / 3</div>
+                   <img class="slide-img" src="./assets/image/rdo-12.jpg" style="width:100%">
+                   <div class="text">Nội Dung 1</div>
+                 </div>
+                <div class="mySlides fade">
+                   <div class="numbertext">2 / 3</div>
+                   <img class="slide-img" src="./assets/image/rdo-10.jpg" style="width:100%">
+                   <div class="text">Nội Dung 2</div>
+                 </div>
+                <div class="mySlides fade">
+                   <div class="numbertext">3 / 3</div>
+                   <img class="slide-img" src="./assets/image/rdo-11.jpg" style="width:100%">
+                   <div class="text">Nội Dung 3</div>
+                </div>
+                
+            </div>
+            <!-- Nút điều khiển mũi tên -->
+            <a class="prev" onclick="plusSlides(-1)"><</a>
+            <a class="next" onclick="plusSlides(1)">></a>
+            <!-- Nút tròn dk slideshow -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <!-- Quảng cáo -->
+            <div class="zing-main-body-advertisement">
+                <img class="zing-main-body-advertisement-img" src="./assets/image/quảng cáo.jpg" alt="">
+            </div>
+            <!-- GẦN ĐÂY -->
+            <div class="zing-main-body-recently">
+                <h2 class="zing-main-body-title">Gần đây</h2>
+                <ul class="zing-main-body-recently-list">
+                    <li class="zing-main-body-recently-item">
+                        <div class="hover-img">
+                            <div class="recently-img">
+                                <img class="zing-main-body-recently-item-img" src="./assets/image/lofi-1.jpg" alt="LOFI" class="zing-main-body-recently-item">
+                            </div>
+                            <div class="item-icon">
+                                <i class="icon-body ti-heart"></i>
+                                <i class="icon-body ti-control-play"></i>
+                                <i class="icon-body ti-more"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="zing-main-body-recently-item-cap">Lofi Chill-Hop Music</div>
+                    </li>
+                    <li class="zing-main-body-recently-item">
+                        <div class="hover-img">
+                            <div class="recently-img">
+                            <img class="zing-main-body-recently-item-img" src="./assets/image/lofi-2.jpg" alt="LOFI" class="zing-main-body-recently-item">
+                        </div>
+                        <div class="item-icon">
+                            <i class="icon-body ti-heart"></i>
+                            <i class="icon-body ti-control-play"></i>
+                            <i class="icon-body ti-more"></i>
+                        </div>
+                        </div>
+                        <div class="zing-main-body-recently-item-cap">Lofi Chill Beats</div>
+                    </li>
+                    <li class="zing-main-body-recently-item">
+                        <div class="hover-img">
+                            <div class="recently-img">
+                            <img class="zing-main-body-recently-item-img" src="./assets/image/bethoven.jpg" alt="LOFI" class="zing-main-body-recently-item">
+                        </div>
+                        <div class="item-icon">
+                            <i class="icon-body ti-heart"></i>
+                            <i class="icon-body ti-control-play"></i>
+                            <i class="icon-body ti-more"></i>
+                        </div>
+                        </div>
+                        <div class="zing-main-body-recently-item-cap">Bảng Xếp Hạng Bài HÁt ÂU Mỹ...</div>
+                    </li>
+                    <li class="zing-main-body-recently-item">
+                        <div class="hover-img">
+                            <div class="recently-img">
+                            <img class="zing-main-body-recently-item-img" src="./assets/image/us-uk.jpg" alt="LOFI" class="zing-main-body-recently-item">
+                        </div>
+                        <div class="item-icon">
+                            <i class="icon-body ti-heart"></i>
+                            <i class="icon-body ti-control-play"></i>
+                            <i class="icon-body ti-more"></i>
+                        </div>
+                        </div>
+                        <div class="zing-main-body-recently-item-cap">Những Bài Hát Hay Nhất Của...</div>
+                    </li>
+                    <li class="zing-main-body-recently-item">
+                        <div class="hover-img">
+                            <div class="recently-img">
+                            <img class="zing-main-body-recently-item-img" src="./assets/image/hòa tấu.jpg" alt="LOFI" class="zing-main-body-recently-item">
+                        </div>
+                        <div class="item-icon">
+                            <i class="icon-body ti-heart"></i>
+                            <i class="icon-body ti-control-play"></i>
+                            <i class="icon-body ti-more"></i>
+                        </div>
+                        </div>
+                        <div class="zing-main-body-recently-item-cap">Top 100 Nhạc Hòa Tấu Cổ Điển Hay... </div>
+                    </li>
+                    <li class="zing-main-body-recently-item">
+                        <div class="hover-img">
+                            <div class="recently-img">
+                            <img class="zing-main-body-recently-item-img" src="./assets/image/nhạc phim hàn.jpg" alt="LOFI" class="zing-main-body-recently-item">
+                        </div>
+                        <div class="item-icon">
+                            <i class="icon-body ti-heart"></i>
+                            <i class="icon-body ti-control-play"></i>
+                            <i class="icon-body ti-more"></i>
+                        </div>
+                        </div>
+                        <div class="zing-main-body-recently-item-cap">Nhạc Phim Hàn Cho Mùa Thu</div>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- Có thể bạn muốn nghe -->
+            <div class="content-main-body">
+                <h2 class="zing-main-body-title">Có thể bạn muốn nghe</h2>
+                <ul class="content-main-body-list">
+                    <li class="content-main-body-item">
+                        <div class="hover-img">
+                            <div class="block-img">
+                            <img src="./assets/image/có thể bạn muốn nghe 1.jpg" alt="" class="block-item-img">
+                            </div>
+                        <div class="item-icon">
+                            <i class="icon-body-own ti-heart"></i>
+                            <i class="icon-body-own ti-control-play"></i>
+                            <i class="icon-body-own ti-more"></i>
+                        </div>
+                        </div>
+                        <h3 class="item-cap">Top Hits US-UK</h3>
+                        <div class="item-sub">Nicki Minaj, Lil Baby, Drake</div>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="hover-img">
+                            <div class="block-img">
+                            <img src="./assets/image/có thể bạn muốn nghe 2.jpg" alt="" class="block-item-img">
+                        </div>
+                        <div class="item-icon">
+                            <i class="icon-body-own ti-heart"></i>
+                            <i class="icon-body-own ti-control-play"></i>
+                            <i class="icon-body-own ti-more"></i>
+                        </div>
+                        </div>
+                        <h3 class="item-cap">Today's Pop Hits</h3>
+                        <div class="item-sub">Troye Sivan, Stephen SanchezK</div>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="hover-img">
+                            <div class="block-img">
+                            <img src="./assets/image/có thể bạn muốn nghe 3.jpg" alt="" class="block-item-img">
+                        </div>
+                        <div class="item-icon-own">
+                            <i class="icon-body-own ti-heart"></i>
+                            <i class="icon-body-own ti-control-play"></i>
+                            <i class="icon-body-own ti-more"></i>
+                        </div>
+                        </div>
+                        <h3 class="item-cap">2000s Pop</h3>
+                        <div class="item-sub">Britney Spears, A*Teens, 'N SYNC</div>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="hover-img">
+                            <div class="block-img">
+                            <img src="./assets/image/có thể bạn muốn nghe 4.jpg" alt="" class="block-item-img">
+                        </div>
+                        <div class="item-icon-own">
+                            <i class="icon-body-own ti-heart"></i>
+                            <i class="icon-body-own ti-control-play"></i>
+                            <i class="icon-body-own ti-more"></i>
+                        </div>
+                        </div>
+                        <h3 class="item-cap">Today's Country Hits</h3>
+                        <div class="item-sub">Kelsea Ballerini, Kacey</div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Mới phát hành -->
+            <div class="zing-main-body-NewRelease">
+                <h2 class="zing-main-body-title">Mới phát hành</h2>
+                <button class="zing-main-body-NewRelease-bt active-newrelease">TẤT CẢ</button>
+                <button class="zing-main-body-NewRelease-bt">VIỆT NAM</button>
+                <button class="zing-main-body-NewRelease-bt">QUỐC TẾ</button>
+                <div class="zing-main-body-NewRelease-frame">
+                    <div class="zing-main-body-NewRelease-column">
+                        <div class="zing-main-body-NewRelease-column-item">
+                            <img src="./assets/image/Newrelease-1-1.jpg" alt="" class="NewRelease-column-item-img">
+                            <div class="NewRelease-column-item-intro">
+                                <div class="NewRelease-name-song">Anh Bước Ra Từ Manga</div>
+                                <div class="NewRelease-name-auhtor">Mr.Siro</div>
+                                <div class="NewRelease-time">1 giờ trước</div>
+                            </div>
+                        </div>
+                        <div class="zing-main-body-NewRelease-column-item">
+                            <img src="./assets/image/NRL-2-1.gif" alt="" class="NewRelease-column-item-img">
+                            <div class="NewRelease-column-item-intro">
+                                <div class="NewRelease-name-song">Một Ngày Mãi Mãi</div>
+                                <div class="NewRelease-name-auhtor">Trang, Tùng</div>
+                                <div class="NewRelease-time">Hôm nay</div>
+                            </div>
+                        </div>
+                        <div class="zing-main-body-NewRelease-column-item">
+                            <img src="./assets/image/NRL-3-1.jpg" alt="" class="NewRelease-column-item-img">
+                            <div class="NewRelease-column-item-intro">
+                                <div class="NewRelease-name-song">All About You</div>
+                                <div class="NewRelease-name-auhtor">THE BOYZ</div>
+                                <div class="NewRelease-time">Hôm qua</div>
+                            </div>
+                        </div>
+                        <div class="zing-main-body-NewRelease-column-item">
+                            <img src="./assets/image/NRL-4-1.jpg" alt="" class="NewRelease-column-item-img">
+                            <div class="NewRelease-column-item-intro">
+                                <div class="NewRelease-name-song">Hơn Em Chỗ Nào</div>
+                                <div class="NewRelease-name-auhtor">Thùy Chi</div>
+                                <div class="NewRelease-time">2 ngày trước</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zing-main-body-NewRelease-column">
+                        <div class="zing-main-body-NewRelease-column-item">
+                            <img src="./assets/image/NRL-1-2.jpg" alt="" class="NewRelease-column-item-img">
+                            <div class="NewRelease-column-item-intro">
+                                <div class="NewRelease-name-song">Dỗi Ít Thôi Ôm Đê</div>
+                                <div class="NewRelease-name-auhtor">Phúc Du, AMEE</div>
+                                <div class="NewRelease-time">5 ngày trước</div>
+                            </div>
+                        </div>
+                        <div class="zing-main-body-NewRelease-column-item">
+                            <img src="./assets/image/NRL-2-2.jpg" alt="" class="NewRelease-column-item-img">
+                            <div class="NewRelease-column-item-intro">
+                                <div class="NewRelease-name-song">Thương Anh (2022 version)</div>
+                                <div class="NewRelease-name-auhtor">Thiều Bảo Trâm, Trung Quân</div>
+                                <div class="NewRelease-time">1 giờ trước</div>
+                            </div>
+                        </div>
+                        <div class="zing-main-body-NewRelease-column-item">
+                            <img src="./assets/image/NRL-3-2.jpg" alt="" class="NewRelease-column-item-img">
+                            <div class="NewRelease-column-item-intro">
+                                <div class="NewRelease-name-song">Anh Bước Ra Từ Manga</div>
+                                <div class="NewRelease-name-auhtor">Mr.Siro</div>
+                                <div class="NewRelease-time">1 giờ trước</div>
+                            </div>
+                        </div>
+                        <div class="zing-main-body-NewRelease-column-item">
+                            <img src="./assets/image/NRL-4-2.jpg" alt="" class="NewRelease-column-item-img">
+                            <div class="NewRelease-column-item-intro">
+                                <div class="NewRelease-name-song">Anh Bước Ra Từ Manga</div>
+                                <div class="NewRelease-name-auhtor">Mr.Siro</div>
+                                <div class="NewRelease-time">1 giờ trước</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zing-main-body-NewRelease-column">
+                        <div class="zing-main-body-NewRelease-column-item">
+                            <img src="./assets/image/NRL-1-3.jpg" alt="" class="NewRelease-column-item-img">
+                            <div class="NewRelease-column-item-intro">
+                                <div class="NewRelease-name-song">Anh Bước Ra Từ Manga</div>
+                                <div class="NewRelease-name-auhtor">Mr.Siro</div>
+                                <div class="NewRelease-time">1 giờ trước</div>
+                            </div>
+                        </div>
+                        <div class="zing-main-body-NewRelease-column-item">
+                            <img src="./assets/image/NRL-2-3.jpg" alt="" class="NewRelease-column-item-img">
+                            <div class="NewRelease-column-item-intro">
+                                <div class="NewRelease-name-song">Anh Bước Ra Từ Manga</div>
+                                <div class="NewRelease-name-auhtor">Mr.Siro</div>
+                                <div class="NewRelease-time">1 giờ trước</div>
+                            </div>
+                        </div>
+                        <div class="zing-main-body-NewRelease-column-item">
+                            <img src="./assets/image/NRL-3-3.jpg" alt="" class="NewRelease-column-item-img">
+                            <div class="NewRelease-column-item-intro">
+                                <div class="NewRelease-name-song">Anh Bước Ra Từ Manga</div>
+                                <div class="NewRelease-name-auhtor">Mr.Siro</div>
+                                <div class="NewRelease-time">1 giờ trước</div>
+                            </div>
+                        </div>
+                        <div class="zing-main-body-NewRelease-column-item">
+                            <img src="./assets/image/NRL-4-3.jpg" alt="" class="NewRelease-column-item-img">
+                            <div class="NewRelease-column-item-intro">
+                                <div class="NewRelease-name-song">Anh Bước Ra Từ Manga</div>
+                                <div class="NewRelease-name-auhtor">Mr.Siro</div>
+                                <div class="NewRelease-time">1 giờ trước</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Năng lượng giữa tuần-->
+            <div class="content-main-body">
+                <h2 class="zing-main-body-title">Năng Lượng Giữa Tuần</h2>
+                <ul class="content-main-body-list">
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/NLGT-1.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Nhạc Cho Thứ Sáu</h3>
+                        <p class="item-sub">Bỏ hết mọi buồn phiền cùng âm nhạc...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/a-1.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Nhạc Cho Thứ Sáu</h3>
+                        <p class="item-sub">Bỏ hết mọi buồn phiền cùng âm nhạc...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/NLGT-3.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Nhạc Cho Thứ Sáu</h3>
+                        <p class="item-sub">Bỏ hết mọi buồn phiền cùng âm nhạc...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/NLGT-4.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Nhạc Cho Thứ Sáu</h3>
+                        <p class="item-sub">Bỏ hết mọi buồn phiền cùng âm nhạc...</p>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Nhạc mới mỗi ngày -->
+            <div class="content-main-body">
+                <h2 class="zing-main-body-title">Nhạc Mới Mỗi Ngày</h2>
+                <ul class="content-main-body-list">
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/NMS-1.jpg" alt="" class="block-item-img NMS-LINE">
+                        </div>
+                        <h3 class="item-cap">V-Pop Tháng</h3>
+                        <p class="item-sub">Trung Quân Idol, Myra Trần, GREY D...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/NMS-2.jpg" alt="" class="block-item-img NMS-LINE">
+                        </div>
+                        <h3 class="item-cap">US-UK Tháng</h3>
+                        <p class="item-sub">BAlan Walker, Troye, Sivan, PInk...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/NMS-3.jpg" alt="" class="block-item-img NMS-LINE">
+                        </div>
+                        <h3 class="item-cap">K-Pop Tháng...</h3>
+                        <p class="item-sub">YooA, B.I, Red Velvet</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/NMS-4.jpg" alt="" class="block-item-img NMS-LINE">
+                        </div>
+                        <h3 class="item-cap">Nhạc Cho Thứ Sáu</h3>
+                        <p class="item-sub">Bỏ hết mọi buồn phiền cùng âm nhạc...</p>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- #Zingchart -->
+            <div class="zing-main-body-zingchart">
+                <div class="zingchart-title">#zingchart</div>
+                <div class="zingchart-frame">
+                    <div class="zingchart-list">
+                        <div class="zingchart-item">
+                            <div class="zingchart-item-number-1">1</div>
+                            <img src="./assets/image/chart-1.jpg" alt="" class="zingchart-item-img">
+                            <div class="zingchart-item-intro">
+                                <div class="zingchart-item-intro-song">Sao Cũng Được</div>
+                                <div class="zingchart-item-intro-author">Thành Đạt</div>
+                            </div>
+                        </div>
+                        <div class="zingchart-item">
+                            <div class="zingchart-item-number-2">2</div>
+                            <img src="./assets/image/chart-2.jpg" alt="" class="zingchart-item-img">
+                            <div class="zingchart-item-intro">
+                                <div class="zingchart-item-intro-song">Hạnh Phúc Chẳng Phải Em</div>
+                                <div class="zingchart-item-intro-author">Hương Ly, LY.M</div>
+                            </div>
+                        </div>
+                        <div class="zingchart-item">
+                            <div class="zingchart-item-number-3">3</div>
+                            <img src="./assets/image/chart-3.jpg" alt="" class="zingchart-item-img">
+                            <div class="zingchart-item-intro">
+                                <div class="zingchart-item-intro-song">Quên Hay Tha Thứ</div>
+                                <div class="zingchart-item-intro-author">Dương Hoàng Yến, Trung Quân Idol</div>
+                            </div>
+                        </div>
+                        <div class="zingchart-BTN">
+                            <button class="zingchart-button">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="zingchart-chart"></div>
+                </div>
+            </div>
+            <!-- Zing sub chart -->
+            <div class="zing-main-body-sub-char">
+                <div class="sub-char-img">
+                    <img class="zing-main-body-sub-char-img" src="./assets/image/subchar-1.jpg" alt="" class="zing-main-body-sub-char">
+                </div>
+                <div class="sub-char-img">
+                    <img class="zing-main-body-sub-char-img" src="./assets/image/subchar-2.jpg" alt="" class="zing-main-body-sub-char">
+                </div>
+                <div class="sub-char-img">
+                    <img class="zing-main-body-sub-char-img" src="./assets/image/subchar-3.jpg" alt="" class="zing-main-body-sub-char">
+                </div>
+            </div>
+            <div class="zing-main-body-singer"></div>
+            <!-- Zing Top 100 -->
+            <div class="content-main-body">
+                <h2 class="zing-main-body-title">Top 100</h2>
+                <ul class="content-main-body-list">
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/TO-1.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Top 100 Bài Hát...</h3>
+                        <p class="item-sub">MONO, Vương Anh Tú, Keyo...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/TO-2.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Top 100 Pop Âu...</h3>
+                        <p class="item-sub">Adele, The Kid LAROI...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/TO-3.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Top 100 Nhạc...</h3>
+                        <p class="item-sub">Alan Walker, K-391, Emelie Hollow...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/TO-4.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Top 100 Trữ Tình Hay...</h3>
+                        <p class="item-sub">Như Quỳnh, Mạnh Quỳnh, Đan Trường</p>
+                    </li>
+
+                </ul>
+            </div>
+            <!--XONE'S CORNER -->
+            <div class="content-main-body">
+                <h2 class="zing-main-body-title">XONE's CORNER</h2>
+                <ul class="content-main-body-list">
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/pop-1.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">2022 New Songs</h3>
+                        <p class="item-sub">Nhạc Mới Từ YooA, Tempest,...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/pop-2.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">2021 Top Hits</h3>
+                        <p class="item-sub">HITS lớn của Justin Bieber, Lil Nas X...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/pop-3.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Chill Chill Với VPOP</h3>
+                        <p class="item-sub">Thư giản cùng thế giới nhạc Việt nhẹ...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/pop-4.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">KPOP countdown</h3>
+                        <p class="item-sub">Top các bài hát KPOP hot nhất tuần 1 tháng 12</p>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- RADIO Nổi Bật -->
+            <div class="content-main-body">
+                <h2 class="zing-main-body-title">Radion Nổi Bật</h2>
+                <ul class="radio-list">
+                    <li class="radio-item">
+                        <div class="radio-img-frame">
+                            <div class="radio-main-block">
+                                <img src="./assets/image/rdo-1.jpg" alt="" class="radio-main-img">
+                            </div>
+                            <div class="radio-sub-block">
+                                <img src="./assets/image/rdo-7.jpg" alt="" class="radio-sub-img">
+                            </div>
+                            <div class="radio-live-frame">
+                                <button class="main-radio-live">Live</button>
+                            </div>
+                        </div>
+                        <h3 class="radio-cap">XONE Radio</h3>
+                        <p class="radio-sub">1k đang nghe</p>
+                    </li>
+                    <li class="radio-item">
+                        <div class="radio-img-frame">
+                            <div class="radio-main-block">
+                                <img src="./assets/image/rdo-2.jpg" alt="" class="radio-main-img">
+                            </div>
+                            <div class="radio-sub-block">
+                                <img src="./assets/image/rdo-8.jpg" alt="" class="radio-sub-img">
+                            </div>
+                            <div class="radio-live-frame">
+                                <button class="main-radio-live">Live</button>
+                            </div>
+                        </div>
+                        <h3 class="radio-cap">XONE Radio</h3>
+                        <p class="radio-sub">1k đang nghe</p>
+                    </li>
+                    <li class="radio-item">
+                        <div class="radio-img-frame">
+                            <div class="radio-main-block">
+                                <img src="./assets/image/rdo-3.jpg" alt="" class="radio-main-img">
+                            </div>
+                            <div class="radio-sub-block">
+                                <img src="./assets/image/rdo-9.jpg" alt="" class="radio-sub-img">
+                            </div>
+                            <div class="radio-live-frame">
+                                <button class="main-radio-live">Live</button>
+                            </div>
+                        </div>
+                        <h3 class="radio-cap">XONE Radio</h3>
+                        <p class="radio-sub">1k đang nghe</p>
+                    </li>
+                    <li class="radio-item">
+                        <div class="radio-img-frame">
+                            <div class="radio-main-block">
+                                <img src="./assets/image/rdo-4.jpg" alt="" class="radio-main-img">
+                            </div>
+                            <div class="radio-sub-block">
+                                <img src="./assets/image/rdo-10.jpg" alt="" class="radio-sub-img">
+                            </div>
+                            <div class="radio-live-frame">
+                                <button class="main-radio-live">Live</button>
+                            </div>
+                        </div>
+                        <h3 class="radio-cap">XONE Radio</h3>
+                        <p class="radio-sub">1k đang nghe</p>
+                    </li>
+                    <li class="radio-item">
+                        <div class="radio-img-frame">
+                            <div class="radio-main-block">
+                                <img src="./assets/image/radio-12.jpg" alt="" class="radio-main-img">
+                            </div>
+                            <div class="radio-sub-block">
+                                <img src="./assets/image/rdo-5.jpg" alt="" class="radio-sub-img">
+                            </div>
+                            <div class="radio-live-frame">
+                                <button class="main-radio-live">Live</button>
+                            </div>
+                        </div>
+                        <h3 class="radio-cap">XONE Radio</h3>
+                        <p class="radio-sub">1k đang nghe</p>
+                    </li>
+                    <li class="radio-item">
+                        <div class="radio-img-frame">
+                            <div class="radio-main-block">
+                                <img src="./assets/image/radio-11.jpg" alt="" class="radio-main-img">
+                            </div>
+                            <div class="radio-sub-block">
+                                <img src="./assets/image/rdo-6.jpg" alt="" class="radio-sub-img">
+                            </div>
+                            <div class="radio-live-frame">
+                                <button class="main-radio-live">Live</button>
+                            </div>
+                        </div>
+                        <h3 class="radio-cap">XONE Radio</h3>
+                        <p class="radio-sub">1k đang nghe</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Nhạc mới -->
+            <div class="content-main-body">
+                <h2 class="zing-main-body-title">Nhạc Mới</h2>
+                <ul class="new-music-list">
+                    <li class="new-music-item">
+                       <div class="new-music-img">
+                        <img src="./assets/image/NMS-5.jpg" alt="" class="new-music-item-img">
+                       </div>
+                        <div class="new-music-intro">
+                            <div class="new-music-item-song">Don't Let Them Know</div>
+                            <div class="new-music-item-auhtor">Negav</div>
+                            <div class="new-music-number-and-date">
+                                <div class="new-music-number">#4</div>
+                                <div class="new-music-date">30.11.2022</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="new-music-item">
+                        <div class="new-music-img">
+                            <img src="./assets/image/NMS-6.jpg" alt="" class="new-music-item-img">
+                        </div>
+                        <div class="new-music-intro">
+                            <div class="new-music-item-song">Don't Let Them Know</div>
+                            <div class="new-music-item-auhtor">Negav</div>
+                            <div class="new-music-number-and-date">
+                                <div class="new-music-number">#5</div>
+                                <div class="new-music-date">30.11.2022</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="new-music-item">
+                        <div class="new-music-img">
+                            <img src="./assets/image/NMS-8.jpg" alt="" class="new-music-item-img">
+                        </div>
+                        <div class="new-music-intro">
+                            <div class="new-music-item-song">Don't Let Them Know</div>
+                            <div class="new-music-item-auhtor">Negav</div>
+                            <div class="new-music-number-and-date">
+                                <div class="new-music-number">#6</div>
+                                <div class="new-music-date">30.11.2022</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- ADVERTISEMENT -->
+            <div class="zing-main-body-new-music"></div>
+            <div class="zing-main-body-advertisement"></div>
+            <!-- NO-NAME -->
+            <div class="content-main-body">
+                <ul class="content-main-body-list">
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/noname-1.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Top 100 Bài Hát...</h3>
+                        <p class="item-sub">MONO, Vương Anh Tú, Keyo...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/noname-2.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Top 100 Pop Âu...</h3>
+                        <p class="item-sub">Adele, The Kid LAROI...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/noname-3.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Top 100 Nhạc...</h3>
+                        <p class="item-sub">Alan Walker, K-391, Emelie Hollow...</p>
+                    </li>
+                    <li class="content-main-body-item">
+                        <div class="block-img">
+                            <img src="./assets/image/noname-4.jpg" alt="" class="block-item-img">
+                        </div>
+                        <h3 class="item-cap">Top 100 Trữ Tình Hay...</h3>
+                        <p class="item-sub">Như Quỳnh, Mạnh Quỳnh, Đan Trường</p>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Sự kiện -->
+            <div class="zing-main-body-event">
+                <h2 class="zing-main-body-title">Sự Kiện</h2>
+                <ul class="event-list">
+                    <li class="event-item">
+                        <div class="event-img-frame">
+                            <img src="./assets/image/ev-1.jpg" alt="" class="event-img">
+                        </div>
+                        <div class="event-up-song">PHÁT HÀNH BÀI HÁT</div>
+                        <h3 class="event-song">Xuân Xa (Live Version)</h3>
+                        <p class="event-time">19:00 Chủ Nhật, 04 tháng 12</p>
+                        <div class="event-care">
+                            <div class="event-care-quantity">Lượt quan tâm</div>
+                            <button class="event-care-btn">QUAN TÂM</button>
+                        </div>
+                    </li>
+                    <li class="event-item">
+                        <div class="event-img-frame">
+                            <img src="./assets/image/ev-2.jpg" alt="" class="event-img">
+                        </div>
+                        <div class="event-up-song">PHÁT HÀNH BÀI HÁT</div>
+                        <h3 class="event-song">Xuân Xa (Live Version)</h3>
+                        <p class="event-time">19:00 Chủ Nhật, 04 tháng 12</p>
+                        <div class="event-care">
+                            <div class="event-care-quantity">Lượt quan tâm</div>
+                            <button class="event-care-btn">QUAN TÂM</button>
+                        </div>
+                    </li>
+                    <li class="event-item">
+                        <div class="event-img-frame">
+                            <img src="./assets/image/ev-3.jpg" alt="" class="event-img">
+                        </div>
+                        <div class="event-up-song">PHÁT HÀNH BÀI HÁT</div>
+                        <h3 class="event-song">Xuân Xa (Live Version)</h3>
+                        <p class="event-time">19:00 Chủ Nhật, 04 tháng 12</p>
+                        <div class="event-care">
+                            <div class="event-care-quantity">Lượt quan tâm</div>
+                            <button class="event-care-btn">QUAN TÂM</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ZING MAIN FOOTER -->
+        <div class="zing-main-footer">
+            <h5 class="doitac">ĐỐI TÁC ÂM NHẠC</h5>
+            <div class="doitac-frame">
+                <div class="doitac-img-block">
+                    <img src="./assets/image/dt-1.jpg" alt="" class="doitac-img">
+                </div>
+                <div class="doitac-img-block">
+                    <img src="./assets/image/dt-2.jpg" alt="" class="doitac-img">
+                </div>
+                <div class="doitac-img-block">
+                    <img src="./assets/image/dt-3.jpg" alt="" class="doitac-img">
+                </div>
+                <div class="doitac-img-block">
+                    <img src="./assets/image/dt-4.jpg" alt="" class="doitac-img">
+                </div>
+                <div class="doitac-img-block">
+                    <img src="./assets/image/dt-5.jpg" alt="" class="doitac-img">
+                </div>
+                <div class="doitac-img-block">
+                    <img src="./assets/image/dt-6.jpg" alt="" class="doitac-img">
+                </div>
+                <div class="doitac-img-block">
+                    <img src="./assets/image/dt-7.jpg" alt="" class="doitac-img">
+                </div>
+                <div class="doitac-img-block">
+                    <img src="./assets/image/dt-8.jpg" alt="" class="doitac-img">
+                </div>
+            </div>
+            <div class="doitac-frame">
+                <div class="doitac-img-block">
+                    <img src="./assets/image/dt-9.jpg" alt="" class="doitac-img">
+                </div>
+                <div class="doitac-img-block">
+                    <img src="./assets/image/dt-10.jpg" alt="" class="doitac-img">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+   </div>
+   <!-- PLAY MUSIC -->
+   <div class="play-music">
+    <div class="frame-music">
+        <img src="./assets/image/a-1.jpg" alt="" class="frame-music-img">
+        <div class="fram-music-intro">
+            <div class="frame-music-song">Anh Bước Ra Từ Manga</div>
+            <div class="frame-music-author">Mr.Siro</div>
+        </div>
+    </div>
+    <div class="frame-active">
+        <i class="icon-active ti-heart"></i>
+        <i class="icon-active ti-more"></i>
+    </div>
+    <div class="frame-play">
+        <i class="icon-play ti-control-shuffle"></i>
+        <i class="icon-play ti-control-skip-backward"></i>
+        <i class="icon-play ti-control-play"></i>
+        <i class="icon-play ti-control-skip-forward"></i>
+        <i class="icon-play ti-reload"></i>
+    </div>
+    <div class="frame-tools">
+        <i class="icon-tools ti-desktop"></i>
+        <i class="icon-tools ti-microphone-alt"></i>
+        <i class="icon-tools ti-layout-slider"></i>
+        <i class="icon-tools ti-volume"></i>
+    </div>
+    <div class="frame-list">
+        <i class="iocn-list ti-list"></i>
+    </div>
+   </div>
+    <script src="./assets/discover.js"></script>
+</body>
+</html>

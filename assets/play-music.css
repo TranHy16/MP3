@@ -1,0 +1,66 @@
+
+.play-music {
+    background-color: #2f074e;
+    margin-top: -4px;
+    height: 86px;
+    display: flex;
+    position: fixed ;
+    width: 100%;
+}
+.frame-music-img {
+    width: 62px;
+    height: 62px;
+    margin-top: 12px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.fram-music-intro {
+    display: inline-block;
+    margin-left: 5px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.frame-music-song {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.frame-music-author {
+    color:#a685b2;
+    margin-bottom: -5px;
+    font-size: 0.7rem;
+}
+.frame-active {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.icon-active {
+    color: #fff;
+    font-size: 1.0rem;
+    margin-right: 20px;
+}
+.frame-tools{
+    display: inline-block;
+    margin-left: 140px;
+    margin-top: 40px;
+}
+.frame-play{
+    display: inline-block;
+    margin-left: 170px;
+    margin-top: 40px;
+}
+.icon-play {
+    color: #fff;
+    margin-right: 30px;
+    font-size: 1rem;
+}
+.icon-tools, .iocn-list {
+    color: #fff;
+    margin-right: 30px;
+    font-size: 1rem;
+}
+.frame-list {
+    display: inline-block;
+    margin-left:100px;
+    margin-top: 40px;
+}
